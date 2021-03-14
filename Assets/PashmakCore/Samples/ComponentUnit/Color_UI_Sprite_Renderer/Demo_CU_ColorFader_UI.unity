@@ -215,37 +215,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 0.46274513, g: 0.64705884, b: 0.9490197, a: 1}
-    secondColor: {r: 1, g: 0.5983629, b: 0, a: 1}
-    fadeCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 0
-      m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 0, g: 0.5752275, b: 1, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -269,7 +243,34 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 0
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -493,33 +494,25 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 0}
-    secondColor: {r: 1, g: 0, b: 0.7333336, a: 1}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 1, g: 0.06132078, b: 0.47887877, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 3.9457545
-        outSlope: 3.9457545
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
-        outWeight: 0.05652479
+        outWeight: 0
       - serializedVersion: 3
-        time: 0.13217346
-        value: 0.5615861
-        inSlope: 3.1312807
-        outSlope: 3.1312807
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.10973456
-        outWeight: 0.087737195
-      - serializedVersion: 3
-        time: 0.56903076
-        value: 0.95754623
+        time: 1
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -529,10 +522,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 0
       m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -556,7 +550,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 0
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -706,10 +699,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 0.05271244, g: 0, b: 1, a: 1}
-    secondColor: {r: 1, g: 0.07510978, b: 0, a: 1}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 0.65444326, g: 0, b: 1, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -733,10 +727,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 0
       m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -760,7 +755,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 0
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -909,10 +903,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 0}
-    secondColor: {r: 1, g: 0.07510978, b: 0, a: 1}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 1, g: 0, b: 0.9233203, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -936,10 +931,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -963,7 +959,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 0
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -1242,37 +1237,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 0, g: 0, b: 0, a: 0}
-    secondColor: {r: 1, g: 1, b: 1, a: 1}
-    fadeCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 1
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 1, g: 1, b: 1, a: 0.54901963}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1296,7 +1265,34 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 1
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 1
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
   m_actOnChildren: 1
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -1363,37 +1359,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 0}
-    secondColor: {r: 1, g: 0.9687811, b: 0, a: 1}
-    fadeCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 0
-      m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 0.990566, g: 0.56471276, b: 0, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1417,7 +1387,34 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 0
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
@@ -2324,37 +2321,11 @@ MonoBehaviour:
   m_autoPlayOnStartIndex: 0
   m_autoPlayOnEnableIndex: 0
   m_fadeContents:
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 0}
-    secondColor: {r: 1, g: 1, b: 1, a: 1}
-    fadeCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 0
-      m_RotationOrder: 4
-  - useItemColorAsFirstColor: 0
-    firstColor: {r: 1, g: 1, b: 1, a: 1}
-    secondColor: {r: 0, g: 0, b: 0, a: 0}
-    fadeCurve:
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 0, g: 0, b: 0, a: 0}
+    m_secondColor: {r: 1, g: 0, b: 0, a: 1}
+    m_fadeCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -2378,7 +2349,34 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_justAlpha: 1
+  - m_justAlpha: 0
+    m_useItemColorAsFirstColor: 0
+    m_firstColor: {r: 1, g: 1, b: 1, a: 1}
+    m_secondColor: {r: 0, g: 0, b: 0, a: 0}
+    m_fadeCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
   m_actOnChildren: 0
   m_includeInactive: 0
   m_getGraphicItemsAtRunTime: 0
