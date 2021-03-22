@@ -84,6 +84,10 @@ namespace Pashmak.Core.CU._UnityEngine._Transform
             ClickedOn = false;
             if (StickToFirstPosition)
                 BaseGameObject.transform.position = FirstPosition;
+            else
+            BaseGameObject.transform.position = new Vector3(BaseGameObject.transform.position.x,
+                BaseGameObject.transform.position.y,
+                BaseGameObject.transform.position.z - OverrideZAtDraggingValue);
         }
         private void Dragging()
         {
