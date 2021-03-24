@@ -1661,17 +1661,17 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 129
+      value: 134
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
@@ -1686,8 +1686,8 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_text
-      value: Component CU_GameObject_Destroy is used to delete game objects or delete
-        the children of a specific  game object  from the scene.
+      value: Ther CU_GameObject_Destroy component is used to delete game objects
+        or delete the children of a specific  game object  from the scene.
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005411180993, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}

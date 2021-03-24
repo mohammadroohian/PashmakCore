@@ -1021,17 +1021,17 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 105
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
@@ -1046,8 +1046,8 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_text
-      value: Component CU_MonoEvent_AwakeStart is used to execute an event when calling
-        the start and awake functions.
+      value: The CU_MonoEvent_AwakeStart component is used to execute an event when
+        calling the start and awake functions.
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005411180993, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}

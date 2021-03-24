@@ -1750,23 +1750,23 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_text
-      value: Component CU_GameObject_DontDestroyOnLoad is used to prevent objects
+      value: The CU_GameObject_DontDestroyOnLoad component is used to prevent objects
         from being destroyed when a new scene is loaded.
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 117
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}

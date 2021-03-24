@@ -2014,17 +2014,17 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 65
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
@@ -2039,7 +2039,7 @@ PrefabInstance:
     - target: {fileID: 7913261005338872329, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_text
-      value: Component CU_Input_GetMouseButton is used to detect mouse inputs.
+      value: The CU_Input_GetMouseButton component is used to detect mouse inputs.
       objectReference: {fileID: 0}
     - target: {fileID: 7913261005411180993, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
