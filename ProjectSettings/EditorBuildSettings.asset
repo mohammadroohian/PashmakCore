@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/PashmakCore/Samples/ComponentUnit/Color_UI_Sprite_Renderer/Demo_CU_ColorFader_UI.unity
     guid: a1a6446e234d27947b3189bb54f622f1
   - enabled: 1
-    path: Assets/PashmakCore/Samples/ComponentUnit/SceneManager/tmp/tmp_L1.unity
+    path: Assets/PashmakCore/Samples/ComponentUnit/_tmp/tmp_L1.unity
     guid: 3dd24377cd902d24ea6bf98baeae162e
   - enabled: 1
     path: Assets/PashmakCore/Samples/ComponentUnit/MonoEvents/MonoEvent_Mouse.unity
     guid: 413846e01158efd43b517b9e34577ce6
   - enabled: 1
-    path: Assets/PashmakCore/Samples/ComponentUnit/SceneManager/tmp/tmp_L2.unity
+    path: Assets/PashmakCore/Samples/ComponentUnit/_tmp/tmp_L2.unity
     guid: e673863c1bc106e4eaa9b768b7e0a781
   - enabled: 1
-    path: Assets/PashmakCore/Samples/ComponentUnit/SceneManager/SceneManager_LoadScene.unity
+    path: Assets/PashmakCore/Samples/ComponentUnit/UnityEngine/SceneManager/SceneManager_LoadScene.unity
     guid: 66238caca6ffbcd4984f184e0f60922c
   - enabled: 1
     path: Assets/PashmakCore/Samples/ComponentUnit/UnityEngine/GameObject/GameObject_Destroy.unity
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PashmakCore/Samples/ComponentUnit/UnityEngine/Transform/Transform_Dragable.unity
     guid: f247a4fbe484a9e44837a1c03eead6d9
+  - enabled: 1
+    path: Assets/PashmakCore/Samples/ComponentUnit/UnityEngine/GameObject/GameObject_DontDestroyOnLoad.unity
+    guid: 7d8d30209b71baa41964bdd6131568cf
   m_configObjects: {}
