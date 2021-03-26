@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 1234738482}
   - component: {fileID: 1234738481}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: rotate 45 degree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +693,7 @@ Transform:
   m_Children:
   - {fileID: 854948697}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1252189825
 GameObject:
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 1268480080}
   - component: {fileID: 1268480079}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: rotate 180 degree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_isActive: 1
   m_baseGameObject: {fileID: 0}
   m_pivot: {fileID: 1268480081}
-  m_speed: -1
+  m_speed: 1
   m_destination: {x: 0, y: 0, z: 180}
   m_detectionAngle: 0.02
   m_local: 0
@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 1948642356}
   - component: {fileID: 1948642355}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_45d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 2007514107}
   - component: {fileID: 2007514106}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas_180d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1370,7 +1370,7 @@ RectTransform:
   m_Children:
   - {fileID: 1252189826}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
