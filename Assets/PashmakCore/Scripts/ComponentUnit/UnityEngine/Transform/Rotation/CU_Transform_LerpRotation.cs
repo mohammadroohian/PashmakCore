@@ -8,7 +8,7 @@ namespace Pashmak.Core.CU._UnityEngine._Transform
         // variable________________________________________________________________
         [SerializeField] protected GameObject m_baseGameObject = null;
         [SerializeField] private Transform m_pivot = null;
-        [SerializeField] private float m_speed = 1f;
+        [SerializeField] private float m_speed = 10f;
         [SerializeField] private Vector3 m_destination = new Vector3();
         [SerializeField] private float m_detectionAngle = .02f;
         [SerializeField] private bool m_local = false;

@@ -8,7 +8,7 @@ namespace Pashmak.Core.CU._UnityEngine._Transform
         [SerializeField] private bool m_rotateAtStart = false;
         [SerializeField] private bool m_rotateAtUpdate = true;
         [SerializeField] protected GameObject m_baseGameObject = null;
-        [SerializeField] private Vector3 m_speed = new Vector3(0, 0, 1f);
+        [SerializeField] private Vector3 m_speed = new Vector3(0, 0, 10f);
         [SerializeField] private Transform m_pivot = null;
         [SerializeField] private Transform m_axis = null;
         [SerializeField] private bool m_local = true;
