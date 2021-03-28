@@ -58,6 +58,7 @@ namespace Pashmak.Core.CU
         private float m_timer = 0;
         private List<object> m_graphicItems = new List<object>();
         private List<Color> m_graphicItemsColors = new List<Color>();
+        private bool m_isFading = false;
 
 
         // property________________________________________________________________
@@ -72,6 +73,7 @@ namespace Pashmak.Core.CU
         public bool GetGraphicItemsAtUpdate { get => m_getGraphicItemsAtUpdate; set => m_getGraphicItemsAtUpdate = value; }
         public UnityEvent OnActive { get => m_onActive; private set => m_onActive = value; }
         public UnityEvent OnDeActive { get => m_onDeActive; private set => m_onDeActive = value; }
+        public bool IsFading { get => m_isFading; set => m_isFading = value; }
 
 
         // monoBehaviour___________________________________________________________
@@ -79,18 +81,14 @@ namespace Pashmak.Core.CU
         {
             // Check for graphic type Detection.
             if (GraphicType == RendererGraphicType.AutoDetect)
-            {
                 AutoDetectGraphicType();
-            }
 
             // Get elements.
             FillGraphicItems();
 
             // Get all items colors for use item color as first color.
             for (int i = 0; i < m_graphicItems.Count; i++)
-            {
                 m_graphicItemsColors.Add(GetGraphicItemColor(m_graphicItems[i]));
-            }
 
 
             // Initialize.
@@ -117,79 +115,22 @@ namespace Pashmak.Core.CU
         void OnEnable()
         {
             if (IsActive && InitializeType == Initialize.AutoPlayOnEnable)
-            {
                 StartFade(AutoPlayOnEnableIndex);
-            }
         }
         void Start()
         {
             if (IsActive && InitializeType == Initialize.AutoPlayOnStart)
-            {
                 StartFade(AutoPlayOnStartIndex);
-            }
         }
         void Update()
         {
             // Check Is Active.
             if (!IsActive) return;
 
-            // Set timer.
-            m_timer += Time.deltaTime;
+            // check fading started.
+            if (!IsFading) return;
 
-            // Get graphic items at update.
-            if (GetGraphicItemsAtUpdate)
-            {
-                FillGraphicItems();
-            }
-
-            // Get value from curve.
-            float tmpCurveValue = m_currentContent.FadeCurve.Evaluate(Time.time - m_tempTime);
-
-            Color tmpItemColor = new Color();
-
-            // Effect on graphic elements.
-            for (int i = 0; i < m_graphicItems.Count; i++)
-            {
-                // Get graphic item color.
-                tmpItemColor = GetGraphicItemColor(m_graphicItems[i]);
-
-                // Check using graphic item color as first color.
-                if (m_currentContent.UseItemColorAsFirstColor)
-                {
-                    // Change the first color to graphic item color.
-                    m_currentContent.FirstColor = m_graphicItemsColors[i];
-                }
-
-                // Check is just alpha or not.
-                if (m_currentContent.JustAlpha)
-                {
-                    // Set graphic item color.
-                    SetGraphicItemsColor(
-                        m_graphicItems[i],
-                        Color.Lerp(
-                            new Color(
-                                tmpItemColor.r,
-                                tmpItemColor.g,
-                                tmpItemColor.b,
-                                m_currentContent.FirstColor.a),
-                            new Color(
-                                tmpItemColor.r,
-                                tmpItemColor.g,
-                                tmpItemColor.b,
-                                m_currentContent.SecondColor.a),
-                            tmpCurveValue));
-                }
-                else
-                {
-                    // Set graphic item color.
-                    SetGraphicItemsColor(
-                        m_graphicItems[i],
-                        Color.Lerp(
-                            m_currentContent.FirstColor,
-                            m_currentContent.SecondColor,
-                            tmpCurveValue));
-                }
-            }
+            UpdateColors();
         }
 
 
@@ -207,6 +148,7 @@ namespace Pashmak.Core.CU
             }
         }
 
+        public void StopeFading() => IsFading = false;
         public void StartFade()
         {
             StartFade(0);
@@ -217,6 +159,8 @@ namespace Pashmak.Core.CU
         }
         public void StartFade(FadeContent content)
         {
+            IsFading = true;
+
             // Set current fade content.
             m_currentContent = content;
 
@@ -347,6 +291,67 @@ namespace Pashmak.Core.CU
                     case RendererGraphicType.Renderer:
                         m_graphicItems.Remove(tmpExcepts[i].GetComponent<Renderer>());
                         break;
+                }
+            }
+        }
+
+        private void UpdateColors()
+        {
+            // Set timer.
+            m_timer += Time.deltaTime;
+
+            // Get graphic items at update.
+            if (GetGraphicItemsAtUpdate)
+            {
+                FillGraphicItems();
+            }
+
+            // Get value from curve.
+            float tmpCurveValue = m_currentContent.FadeCurve.Evaluate(Time.time - m_tempTime);
+
+            Color tmpItemColor = new Color();
+
+            // Effect on graphic elements.
+            for (int i = 0; i < m_graphicItems.Count; i++)
+            {
+                // Get graphic item color.
+                tmpItemColor = GetGraphicItemColor(m_graphicItems[i]);
+
+                // Check using graphic item color as first color.
+                if (m_currentContent.UseItemColorAsFirstColor)
+                {
+                    // Change the first color to graphic item color.
+                    m_currentContent.FirstColor = m_graphicItemsColors[i];
+                }
+
+                // Check is just alpha or not.
+                if (m_currentContent.JustAlpha)
+                {
+                    // Set graphic item color.
+                    SetGraphicItemsColor(
+                        m_graphicItems[i],
+                        Color.Lerp(
+                            new Color(
+                                tmpItemColor.r,
+                                tmpItemColor.g,
+                                tmpItemColor.b,
+                                m_currentContent.FirstColor.a),
+                            new Color(
+                                tmpItemColor.r,
+                                tmpItemColor.g,
+                                tmpItemColor.b,
+                                m_currentContent.SecondColor.a),
+                            tmpCurveValue));
+                }
+                else
+                {
+                    // Set graphic item color.
+                    SetGraphicItemsColor(
+                        m_graphicItems[i],
+                        Color.Lerp(
+                            m_currentContent.FirstColor,
+                            m_currentContent.SecondColor,
+                            tmpCurveValue));
                 }
             }
         }
