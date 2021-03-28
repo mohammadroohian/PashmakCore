@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using static UnityEngine.ScreenCapture;
+using NaughtyAttributes;
 
 namespace Pashmak.Core.CU._UnityEngine
 {
@@ -12,6 +13,7 @@ namespace Pashmak.Core.CU._UnityEngine
         [SerializeField] string m_savePath = "captured_image";
         [SerializeField] int m_superSize = 1;
         [SerializeField] bool m_isSterio = false;
+        [ShowIf("m_isSterio")]
         [SerializeField] StereoScreenCaptureMode m_StereoMode = StereoScreenCaptureMode.BothEyes;
 
 
