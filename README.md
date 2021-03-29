@@ -137,3 +137,19 @@ The CU_Transform_Sync component is used to synchronize the transform properties 
 The CU_Transform_LerpPositions component is used to move an agent between multiple points. This component also has a loop capability.
 
 ![CU_Transform_LerpPositions](https://user-images.githubusercontent.com/80090999/112807618-5a050900-908d-11eb-82ea-cdd32f7781b6.gif)
+
+### CU_Transform_Dragable
+
+![image](https://user-images.githubusercontent.com/80090999/112807819-90db1f00-908d-11eb-8f0e-a242922fd83c.png)
+
+The CU_Transform_Dragable component is used to enable the ability to drag objects.
+
+![CU_Transform_Dragable](https://user-images.githubusercontent.com/80090999/112807988-c253ea80-908d-11eb-9a79-cffe41a0485c.gif)
+
+### CU_Transform_Position_SyncToMouse
+
+![image](https://user-images.githubusercontent.com/80090999/112808100-e283a980-908d-11eb-870b-27e2565f8f78.png)
+
+The CU_Transform_Position_SyncToMouse is used to synchronize the position of an object game with mouse.
+
+![CU_Transform_Position_SyncToMouse](https://user-images.githubusercontent.com/80090999/112808320-1bbc1980-908e-11eb-96f3-113f592f4d17.gif)
