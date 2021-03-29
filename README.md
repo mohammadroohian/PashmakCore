@@ -50,6 +50,9 @@ Each component has a simple task that can be combined with other components to p
 3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
 
 ## Overview
+To learn more about how these components work, check out the sample scenes.
+The following are a number of practical cases.
+
 ### CU_ColorFader
 
 ![image](https://user-images.githubusercontent.com/80090999/112787349-8e68cd00-906d-11eb-8a94-6077ff5edf13.png)
