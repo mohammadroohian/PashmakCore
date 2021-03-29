@@ -51,4 +51,4 @@ Each component has a simple task that can be combined with other components to p
 
 ## Overview
 ### CU_ColorFader
-![image](https://user-images.githubusercontent.com/80090999/112787281-7133fe80-906d-11eb-8f1b-d95c8c418d62.png)
+![image](https://user-images.githubusercontent.com/80090999/112787349-8e68cd00-906d-11eb-8a94-6077ff5edf13.png)
