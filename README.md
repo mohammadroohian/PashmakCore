@@ -35,8 +35,8 @@ Each component has a simple task that can be combined with other components to p
 * Post Processing 2.3.0
 
 ## Installation
-First install TextMesh Pro and Post Processing packages in Unity through Package Manager.`MenuItem - Window - Package Manager`.
-Add TextMesh Pro sample scenes.
+* First install TextMesh Pro and Post Processing packages in Unity through Package Manager.`MenuItem - Window - Package Manager`.
+* Add TextMesh Pro sample scenes.
 
 ### Perform one of the following methods:
 #### unitypackage file
@@ -45,6 +45,6 @@ Add TextMesh Pro sample scenes.
 3. Install [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes#installation).
 
 #### zip file
-1. Download a source code zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
+1. Download a `source code` zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
 2. Extract it.
 3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
