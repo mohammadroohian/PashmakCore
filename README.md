@@ -122,4 +122,11 @@ The CU_Input_GetMouseButton component is used to detect mouse inputs.
 
 ![CU_Input_GetMouseButton](https://user-images.githubusercontent.com/80090999/112806695-50c76c80-908c-11eb-894c-fbe92535f9c2.gif)
 
+### CU_Transform_Sync
+
+![image](https://user-images.githubusercontent.com/80090999/112806946-9421db00-908c-11eb-8004-d49b70753f7f.png)
+
+The CU_Transform_Sync component is used to synchronize the transform properties (position, rotation, scale) of an object game.
+
+![CU_Transform_Sync](https://user-images.githubusercontent.com/80090999/112807139-d0edd200-908c-11eb-99f8-74165f7a81e7.gif)
 
