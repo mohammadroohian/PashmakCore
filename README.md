@@ -72,3 +72,12 @@ Unity UI system:
 The CU_MonoEvent_Collider component is used to detect all types of collisions and triggers in 2D and 3D.
 
 ![MonoEvent_Collider](https://user-images.githubusercontent.com/80090999/112799285-66846400-9083-11eb-9fae-aa22b716cfcc.gif)
+
+### CU_MonoEvent_Mouse
+
+![image](https://user-images.githubusercontent.com/80090999/112799912-35f0fa00-9084-11eb-8131-02e9605eac08.png)
+
+The MonoEvent_Mouse component is used to detect mouse events. 
+Enter - Exit - Down - Up - Over - Drag
+
+![MonoEvent_Mouse](https://user-images.githubusercontent.com/80090999/112799979-4dc87e00-9084-11eb-930e-52f59180bead.gif)
