@@ -11,7 +11,7 @@ These scripts are useful to work with:
   * Conditions
   * GameObject
   * Input
-  * Rigidbody and Rigidbody2D
+  * Rigidbody & Rigidbody2D
   * SceneManager
   * Screen
   * ScreenCapture
@@ -65,4 +65,10 @@ Unity UI system:
 
 ![CU_ColorFader_2](https://user-images.githubusercontent.com/80090999/112787894-db00d800-906e-11eb-8a32-fd14e8ae43d7.gif)
 
+### CU_MonoEvent_Collider
 
+![image](https://user-images.githubusercontent.com/80090999/112798795-ab5bcb00-9082-11eb-836e-2300284e4178.png)
+
+The CU_MonoEvent_Collider component is used to detect all types of collisions and triggers in 2D and 3D.
+
+![MonoEvent_Collider](https://user-images.githubusercontent.com/80090999/112799285-66846400-9083-11eb-9fae-aa22b716cfcc.gif)
