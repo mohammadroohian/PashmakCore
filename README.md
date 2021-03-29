@@ -153,3 +153,11 @@ The CU_Transform_Dragable component is used to enable the ability to drag object
 The CU_Transform_Position_SyncToMouse is used to synchronize the position of an object game with mouse.
 
 ![CU_Transform_Position_SyncToMouse](https://user-images.githubusercontent.com/80090999/112808320-1bbc1980-908e-11eb-96f3-113f592f4d17.gif)
+
+### CU_Transform_Translate
+
+![image](https://user-images.githubusercontent.com/80090999/112808569-5b830100-908e-11eb-9e89-4fb8ffa981b7.png)
+
+The CU_Transform_Translate component is used to move an object game on the screen.
+
+![CU_Transform_Translate](https://user-images.githubusercontent.com/80090999/112808778-96853480-908e-11eb-9718-df53643db8f0.gif)
