@@ -86,9 +86,10 @@ Enter - Exit - Down - Up - Over - Drag
 
 ![image](https://user-images.githubusercontent.com/80090999/112800692-3a69e280-9085-11eb-887c-977251a05d74.png)
 
-The CU_Transform_SnapObj component and CU_Transform_Dragable are used to snap one object to a specific point. 
+The CU_Transform_SnapObj component and CU_Transform_Dragable are used to snap one object to a specific point.
 
-![CU_Transform_SnapObj](https://user-images.githubusercontent.com/80090999/112800709-40f85a00-9085-11eb-8c5a-436a9bc02125.gif)
+![CU_Transform_SnapObj2](https://user-images.githubusercontent.com/80090999/112801875-aac53380-9086-11eb-941d-b69b61675e04.gif)
+
 
 
 
