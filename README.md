@@ -98,6 +98,11 @@ The CU_GameObject_Instantiate component is used to spawn game objects.
 
 ![CU_GameObject_Instantiate ](https://user-images.githubusercontent.com/80090999/112802558-8e75c680-9087-11eb-979a-539d6308f361.gif)
 
+### CU_GameObject_Destroy
 
-![CU_GameObject_Instantiate ](https://user-images.githubusercontent.com/80090999/112802521-8584f500-9087-11eb-8ad7-2cd500bf0397.gif)
+![image](https://user-images.githubusercontent.com/80090999/112802753-ced54480-9087-11eb-812d-00c256be8523.png)
+
+Ther CU_GameObject_Destroy component is used to delete game objects or delete the children of a specific  game object  from the scene.
+
+![CU_GameObject_Destroy](https://user-images.githubusercontent.com/80090999/112803011-1b208480-9088-11eb-9ade-88fa2ef126e2.gif)
 
