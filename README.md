@@ -28,6 +28,11 @@ These scripts are useful to work with:
 This code snippet can be used for 2D and 3D projects.
 Each component has a simple task that can be combined with other components to perform more complex tasks.
 
+### Why should you use PashmakCore?
+
+Use these pieces of code instead of writing code for some small tasks. Use them to build prototypes and speed things up.
+Put them together and do more complex tasks without the need for coding.
+
 ## Requirements
 * Unity 2019.4.7 or later versions.
 * [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
