@@ -77,7 +77,18 @@ The CU_MonoEvent_Collider component is used to detect all types of collisions an
 
 ![image](https://user-images.githubusercontent.com/80090999/112799912-35f0fa00-9084-11eb-8131-02e9605eac08.png)
 
-The MonoEvent_Mouse component is used to detect mouse events. 
+The CU_MonoEvent_Mouse component is used to detect mouse events. 
 Enter - Exit - Down - Up - Over - Drag
 
 ![MonoEvent_Mouse](https://user-images.githubusercontent.com/80090999/112799979-4dc87e00-9084-11eb-930e-52f59180bead.gif)
+
+### Snapable objects
+
+![image](https://user-images.githubusercontent.com/80090999/112800692-3a69e280-9085-11eb-887c-977251a05d74.png)
+
+The CU_Transform_SnapObj component and CU_Transform_Dragable are used to snap one object to a specific point. 
+
+![CU_Transform_SnapObj](https://user-images.githubusercontent.com/80090999/112800709-40f85a00-9085-11eb-8c5a-436a9bc02125.gif)
+
+
+
