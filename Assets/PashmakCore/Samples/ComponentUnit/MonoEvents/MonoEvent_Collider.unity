@@ -1805,23 +1805,23 @@ PrefabInstance:
     - target: {fileID: 7913261004820408821, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_text
-      value: Circle is an example of a collision and circle two is an example of
-        a trigger.
+      value: Circle one is an example of a collision and circle two is an example
+        of a trigger.
       objectReference: {fileID: 0}
     - target: {fileID: 7913261004820408821, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 78
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7913261004820408821, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7913261004820408821, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7913261004820408821, guid: 1b57f194372b18e44a5cb668d10ec4ab,
         type: 3}
