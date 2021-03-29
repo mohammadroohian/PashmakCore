@@ -130,3 +130,10 @@ The CU_Transform_Sync component is used to synchronize the transform properties 
 
 ![CU_Transform_Sync](https://user-images.githubusercontent.com/80090999/112807139-d0edd200-908c-11eb-99f8-74165f7a81e7.gif)
 
+### CU_Transform_LerpPositions
+
+![image](https://user-images.githubusercontent.com/80090999/112807353-0abed880-908d-11eb-9cca-6336465314fa.png)
+
+The CU_Transform_LerpPositions component is used to move an agent between multiple points. This component also has a loop capability.
+
+![CU_Transform_LerpPositions](https://user-images.githubusercontent.com/80090999/112807618-5a050900-908d-11eb-82ea-cdd32f7781b6.gif)
