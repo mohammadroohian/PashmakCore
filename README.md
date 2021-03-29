@@ -29,10 +29,10 @@ This code snippet can be used for 2D and 3D projects.
 Each component has a simple task that can be combined with other components to perform more complex tasks.
 
 ## Requirements
-Unity 2019.4.7' or later versions.
-[NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
-TextMesh Pro 2.0.1
-Post Processing 2.3.0
+* Unity 2019.4.7' or later versions.
+* [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
+* TextMesh Pro 2.0.1
+* Post Processing 2.3.0
 
 ## Installation
 First install TextMesh Pro and Post Processing packages in Unity through Package Manager.'MenuItem - Window - Package Manager'.
