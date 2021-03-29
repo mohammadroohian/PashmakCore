@@ -48,3 +48,7 @@ Each component has a simple task that can be combined with other components to p
 1. Download a `source code` zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
 2. Extract it.
 3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
+
+## Overview
+### CU_ColorFader
+![image](https://user-images.githubusercontent.com/80090999/112787281-7133fe80-906d-11eb-8f1b-d95c8c418d62.png)
