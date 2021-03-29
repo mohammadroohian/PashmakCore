@@ -90,6 +90,14 @@ The CU_Transform_SnapObj component and CU_Transform_Dragable are used to snap on
 
 ![CU_Transform_SnapObj2](https://user-images.githubusercontent.com/80090999/112801875-aac53380-9086-11eb-941d-b69b61675e04.gif)
 
+### CU_GameObject_Instantiate
+
+![image](https://user-images.githubusercontent.com/80090999/112802162-1909f600-9087-11eb-99d6-199a1a1f3156.png)
+
+The CU_GameObject_Instantiate component is used to spawn game objects.
+
+![CU_GameObject_Instantiate ](https://user-images.githubusercontent.com/80090999/112802558-8e75c680-9087-11eb-979a-539d6308f361.gif)
 
 
+![CU_GameObject_Instantiate ](https://user-images.githubusercontent.com/80090999/112802521-8584f500-9087-11eb-8ad7-2cd500bf0397.gif)
 
