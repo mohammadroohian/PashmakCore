@@ -161,3 +161,20 @@ The CU_Transform_Position_SyncToMouse is used to synchronize the position of an 
 The CU_Transform_Translate component is used to move an object game on the screen.
 
 ![CU_Transform_Translate](https://user-images.githubusercontent.com/80090999/112808778-96853480-908e-11eb-9718-df53643db8f0.gif)
+
+### CU_Transform_LerpRotation
+
+![image](https://user-images.githubusercontent.com/80090999/112808943-c16f8880-908e-11eb-8f62-59cfeb55be86.png)
+
+The CU_Transform_LerpRotation component is used to change the angle of a game object from one angle to another smoothly.
+
+![CU_Transform_LerpRotation](https://user-images.githubusercontent.com/80090999/112809176-fbd92580-908e-11eb-9e2f-e9eaa59e2a74.gif)
+
+### CU_Transform_LookAt
+
+![image](https://user-images.githubusercontent.com/80090999/112809720-89b51080-908f-11eb-957f-9d2d08619e8b.png)
+
+The CU_Transform_LookAt component is used to look from one object to another.
+
+![CU_Transform_LookAt](https://user-images.githubusercontent.com/80090999/112809757-98032c80-908f-11eb-8599-f12e2005a0e3.gif)
+
