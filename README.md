@@ -48,3 +48,21 @@ Each component has a simple task that can be combined with other components to p
 1. Download a `source code` zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
 2. Extract it.
 3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
+
+## Overview
+To learn more about how these components work, check out the sample scenes.
+The following are a number of practical cases.
+
+### CU_ColorFader
+
+![image](https://user-images.githubusercontent.com/80090999/112787349-8e68cd00-906d-11eb-8a94-6077ff5edf13.png)
+
+2D sprites and 3D objects:
+
+![CU_ColorFader](https://user-images.githubusercontent.com/80090999/112787603-1f3fa880-906e-11eb-8301-cfa3e79fd579.gif)
+
+Unity UI system:
+
+![CU_ColorFader_2](https://user-images.githubusercontent.com/80090999/112787894-db00d800-906e-11eb-8a32-fd14e8ae43d7.gif)
+
+
