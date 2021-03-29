@@ -106,3 +106,20 @@ Ther CU_GameObject_Destroy component is used to delete game objects or delete th
 
 ![CU_GameObject_Destroy](https://user-images.githubusercontent.com/80090999/112803011-1b208480-9088-11eb-9ade-88fa2ef126e2.gif)
 
+### CU_Input_GetKey
+
+![image](https://user-images.githubusercontent.com/80090999/112806128-b49d6580-908b-11eb-9c05-e7c8646ae641.png)
+
+The CU_Input_GetKey component is used to detect input keys.
+
+![CU_Input_GetKey](https://user-images.githubusercontent.com/80090999/112806299-df87b980-908b-11eb-8f2f-116d2efe9894.gif)
+
+### CU_Input_GetMouseButton
+
+![image](https://user-images.githubusercontent.com/80090999/112806678-4ad18b80-908c-11eb-9da7-f1fc27813b92.png)
+
+The CU_Input_GetMouseButton component is used to detect mouse inputs.
+
+![CU_Input_GetMouseButton](https://user-images.githubusercontent.com/80090999/112806695-50c76c80-908c-11eb-894c-fbe92535f9c2.gif)
+
+
