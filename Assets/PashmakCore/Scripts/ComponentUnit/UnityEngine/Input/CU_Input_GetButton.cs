@@ -12,7 +12,7 @@ namespace Pashmak.Core.CU._UnityEngine._Input
 
 
         // variable________________________________________________________________
-        [SerializeField] private string m_buttonName = "jump";
+        [SerializeField] private string m_buttonName = "Jump";
         [SerializeField] private ButtonDetection m_detection = ButtonDetection.GetButtonDown;
         [SerializeField] private UnityEvent m_onDetectButton = new UnityEvent();
 
