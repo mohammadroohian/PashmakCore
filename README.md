@@ -45,15 +45,15 @@ Put them together and do more complex tasks without the need for coding.
 * Add `TextMesh Pro` sample scenes.
 
 ### Perform one of the following methods:
-#### unitypackage file
-1. Download `.unitypackage` file from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
-2. Import it into your project.
-3. Install [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes#installation).
-
-#### zip file
+#### zip file (The simple way)
 1. Download a `source code` zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
 2. Extract it.
 3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
+
+#### unitypackage file
+1. Install [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes#installation).
+2. Download `.unitypackage` file from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
+3. Import it into your project.
 
 ## Overview
 To learn more about how these components work, check out the sample scenes.
