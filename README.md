@@ -48,7 +48,7 @@ Put them together and do more complex tasks without the need for coding.
 #### zip file (The simple way)
 1. Download a `source code` zip from [releases](https://github.com/mohammadroohian/PashmakCore/releases).
 2. Extract it.
-3. Copy the items in the `Assets` folder into the `Assets` folder of your project.
+3. Copy the items in the `Assets` folder into the `Assets` folder of your project. (Click replace files if necessary)
 
 #### unitypackage file
 1. Install [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes#installation).
