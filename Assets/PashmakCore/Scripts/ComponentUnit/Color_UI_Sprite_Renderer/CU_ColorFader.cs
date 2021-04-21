@@ -32,12 +32,12 @@ namespace Pashmak.Core.CU
         [SerializeField] private int m_autoPlayOnStartIndex = 0;
         [SerializeField] private int m_autoPlayOnEnableIndex = 0;
         [SerializeField]
-        private FadeContent[] m_fadeContents = {
-                new FadeContent(new Color(0f,0f,0f,0f), new Color(1f,1f,1f,1f), new AnimationCurve(
+        private FadeProfile[] m_fadeContents = {
+                new FadeProfile(new Color(0f,0f,0f,0f), new Color(1f,1f,1f,1f), new AnimationCurve(
                         new Keyframe(0f,0f),
                         new Keyframe(1f,1f)
                     )),
-                new FadeContent(new Color(1f,1f,1f,1f), new Color(0f,0f,0f,0f), new AnimationCurve(
+                new FadeProfile(new Color(1f,1f,1f,1f), new Color(0f,0f,0f,0f), new AnimationCurve(
                         new Keyframe(0f,0f),
                         new Keyframe(1f,1f)
                     ))
@@ -53,7 +53,7 @@ namespace Pashmak.Core.CU
         [SerializeField] private UnityEvent m_onActive = new UnityEvent();
         [SerializeField] private UnityEvent m_onDeActive = new UnityEvent();
 
-        private FadeContent m_currentContent;
+        private FadeProfile m_currentContent;
         private float m_tempTime;
         private float m_timer = 0;
         private List<object> m_graphicItems = new List<object>();
@@ -66,7 +66,7 @@ namespace Pashmak.Core.CU
         public Initialize InitializeType { get => m_initializeType; set => m_initializeType = value; }
         public int AutoPlayOnStartIndex { get => m_autoPlayOnStartIndex; set => m_autoPlayOnStartIndex = value; }
         public int AutoPlayOnEnableIndex { get => m_autoPlayOnEnableIndex; set => m_autoPlayOnEnableIndex = value; }
-        public FadeContent[] FadeContents { get => m_fadeContents; set => m_fadeContents = value; }
+        public FadeProfile[] FadeContents { get => m_fadeContents; set => m_fadeContents = value; }
         public bool ActOnChildren { get => m_actOnChildren; set => m_actOnChildren = value; }
         public bool IncludeInactive { get => m_includeInactive; set => m_includeInactive = value; }
         public bool GetGraphicItemsAtRunTime { get => m_getGraphicItemsAtRunTime; set => m_getGraphicItemsAtRunTime = value; }
@@ -74,6 +74,7 @@ namespace Pashmak.Core.CU
         public UnityEvent OnActive { get => m_onActive; private set => m_onActive = value; }
         public UnityEvent OnDeActive { get => m_onDeActive; private set => m_onDeActive = value; }
         public bool IsFading { get => m_isFading; set => m_isFading = value; }
+        public FadeProfile CurrentContent { get => m_currentContent; private set => m_currentContent = value; }
 
 
         // monoBehaviour___________________________________________________________
@@ -110,7 +111,7 @@ namespace Pashmak.Core.CU
             }
 
             // First Element.
-            m_currentContent = FadeContents[0];
+            CurrentContent = FadeContents[0];
         }
         void OnEnable()
         {
@@ -139,36 +140,24 @@ namespace Pashmak.Core.CU
         {
             IsActive = value;
             if (IsActive)
-            {
                 OnActive.Invoke();
-            }
             else
-            {
                 OnDeActive.Invoke();
-            }
         }
 
         public void StopeFading() => IsFading = false;
-        public void StartFade()
-        {
-            StartFade(0);
-        }
-        public void StartFade(int index)
-        {
-            StartFade(FadeContents[index]);
-        }
-        public void StartFade(FadeContent content)
+        public void StartFade() => StartFade(0);
+        public void StartFade(int index) => StartFade(FadeContents[index]);
+        public void StartFade(FadeProfile content)
         {
             IsFading = true;
 
             // Set current fade content.
-            m_currentContent = content;
+            CurrentContent = content;
 
             // Get graphic items.
             if (GetGraphicItemsAtRunTime)
-            {
                 FillGraphicItems();
-            }
 
             Color tmpItemColor = new Color();
 
@@ -178,13 +167,11 @@ namespace Pashmak.Core.CU
                 tmpItemColor = GetGraphicItemColor(m_graphicItems[i]);
 
                 // Check using graphic item color as first color.
-                if (m_currentContent.UseItemColorAsFirstColor)
-                {
-                    m_currentContent.FirstColor = tmpItemColor;
-                }
+                if (CurrentContent.UseItemColorAsFirstColor)
+                    CurrentContent.FirstColor = tmpItemColor;
 
                 // Check is just alpha or not.
-                if (m_currentContent.JustAlpha)
+                if (CurrentContent.JustAlpha)
                 {
                     // Set graphic item color.
                     SetGraphicItemsColor(
@@ -193,12 +180,12 @@ namespace Pashmak.Core.CU
                             tmpItemColor.r,
                             tmpItemColor.g,
                             tmpItemColor.b,
-                            m_currentContent.FirstColor.a));
+                            CurrentContent.FirstColor.a));
                 }
                 else
                 {
                     // Set graphic item color to first color.
-                    SetGraphicItemsColor(m_graphicItems[i], m_currentContent.FirstColor);
+                    SetGraphicItemsColor(m_graphicItems[i], CurrentContent.FirstColor);
                 }
             }
 
@@ -210,9 +197,7 @@ namespace Pashmak.Core.CU
         public void SetToFirstColor()
         {
             for (int i = 0; i < m_graphicItems.Count; i++)
-            {
                 SetGraphicItemsColor(m_graphicItems[i], m_graphicItemsColors[i]);
-            }
         }
 
         private void AutoDetectGraphicType()
@@ -302,12 +287,10 @@ namespace Pashmak.Core.CU
 
             // Get graphic items at update.
             if (GetGraphicItemsAtUpdate)
-            {
                 FillGraphicItems();
-            }
 
             // Get value from curve.
-            float tmpCurveValue = m_currentContent.FadeCurve.Evaluate(Time.time - m_tempTime);
+            float tmpCurveValue = CurrentContent.FadeCurve.Evaluate(Time.time - m_tempTime);
 
             Color tmpItemColor = new Color();
 
@@ -318,14 +301,14 @@ namespace Pashmak.Core.CU
                 tmpItemColor = GetGraphicItemColor(m_graphicItems[i]);
 
                 // Check using graphic item color as first color.
-                if (m_currentContent.UseItemColorAsFirstColor)
+                if (CurrentContent.UseItemColorAsFirstColor)
                 {
                     // Change the first color to graphic item color.
-                    m_currentContent.FirstColor = m_graphicItemsColors[i];
+                    CurrentContent.FirstColor = m_graphicItemsColors[i];
                 }
 
                 // Check is just alpha or not.
-                if (m_currentContent.JustAlpha)
+                if (CurrentContent.JustAlpha)
                 {
                     // Set graphic item color.
                     SetGraphicItemsColor(
@@ -335,12 +318,12 @@ namespace Pashmak.Core.CU
                                 tmpItemColor.r,
                                 tmpItemColor.g,
                                 tmpItemColor.b,
-                                m_currentContent.FirstColor.a),
+                                CurrentContent.FirstColor.a),
                             new Color(
                                 tmpItemColor.r,
                                 tmpItemColor.g,
                                 tmpItemColor.b,
-                                m_currentContent.SecondColor.a),
+                                CurrentContent.SecondColor.a),
                             tmpCurveValue));
                 }
                 else
@@ -349,8 +332,8 @@ namespace Pashmak.Core.CU
                     SetGraphicItemsColor(
                         m_graphicItems[i],
                         Color.Lerp(
-                            m_currentContent.FirstColor,
-                            m_currentContent.SecondColor,
+                            CurrentContent.FirstColor,
+                            CurrentContent.SecondColor,
                             tmpCurveValue));
                 }
             }
@@ -370,7 +353,7 @@ namespace Pashmak.Core.CU
                     ((Outline)graphicItem).effectColor = value;
                     break;
                 case RendererGraphicType.Renderer:
-                    ((Renderer)graphicItem).material.SetColor("_Color", value);
+                    ((Renderer)graphicItem).materials[CurrentContent.MaterialIndex].SetColor("_Color", value);
                     break;
             }
         }
@@ -394,14 +377,11 @@ namespace Pashmak.Core.CU
 
         // class___________________________________________________________________
         [System.Serializable]
-        public class FadeContent
+        public class FadeProfile
         {
             // constructor_____________________________________________________________
-            public FadeContent()
-            {
-
-            }
-            public FadeContent(Color firstColor, Color secondColor, AnimationCurve fadeCurve)
+            public FadeProfile() { }
+            public FadeProfile(Color firstColor, Color secondColor, AnimationCurve fadeCurve)
             {
                 this.FirstColor = firstColor;
                 this.SecondColor = secondColor;
@@ -415,6 +395,7 @@ namespace Pashmak.Core.CU
             [SerializeField] private Color m_firstColor = new Color(1, 1, 1, 1);
             [SerializeField] private Color m_secondColor = new Color(0, 0, 0, 0);
             [SerializeField] private AnimationCurve m_fadeCurve = new AnimationCurve();
+            [SerializeField] private int m_materialIndex = 0;
 
 
             // property________________________________________________________________
@@ -427,6 +408,7 @@ namespace Pashmak.Core.CU
                 get => m_useItemColorAsFirstColor;
                 set => m_useItemColorAsFirstColor = value;
             }
+            public int MaterialIndex { get => m_materialIndex; set => m_materialIndex = value; }
         }
     }
 }
