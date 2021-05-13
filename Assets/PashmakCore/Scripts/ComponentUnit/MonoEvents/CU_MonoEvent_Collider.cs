@@ -1,4 +1,5 @@
-﻿using Pashmak.Core.Common;
+﻿using NaughtyAttributes;
+using Pashmak.Core.Common;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -32,6 +33,7 @@ namespace Pashmak.Core.CU.MonoEvent
         private Collider2D m_tmpEventTypeGetFromComponent2D;
         [SerializeField] ColliderState m_state = ColliderState.Enter;
         [SerializeField] ColliderDemention m_demention = ColliderDemention._2D;
+        [Tag]
         [SerializeField] private string m_objectTag = "Untagged";//Tag of game object that collision with this.if be empty means every tag can work.
         [SerializeField] UnityEvent m_onDetect = new UnityEvent();
         [SerializeField] private MessageToGameObject m_sendMessageOptions = new MessageToGameObject();
