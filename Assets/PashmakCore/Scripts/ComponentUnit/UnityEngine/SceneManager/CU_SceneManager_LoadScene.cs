@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NaughtyAttributes;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
@@ -7,6 +8,7 @@ namespace Pashmak.Core.CU._UnityEngine._SceneManagement
     public class CU_SceneManager_LoadScene : CU_Component
     {
         // variable________________________________________________________________
+        [Scene]
         [SerializeField] private string m_sceneName = "";
 
 
